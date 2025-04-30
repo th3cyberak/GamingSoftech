@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gradient-game overflow-x-hidden;
+    cursor: url('/cursor-cyber.png'), auto;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-game-blue;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-neon rounded-full;
+  }
+}
+
+@layer components {
+  /* Background gradients */
+  .bg-mission-grid {
+    background-image: 
+      linear-gradient(to right, rgba(139, 92, 246, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .bg-vault-bg {
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(0, 246, 255, 0.15) 0%, transparent 20%),
+      radial-gradient(circle at 75% 70%, rgba(236, 72, 153, 0.1) 0%, transparent 20%);
+  }
+  
+  .bg-cyberpunk-grid {
+    background-image:
+      linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+      linear-gradient(rgba(0, 246, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 246, 255, 0.05) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+  }
+
+  .neon-glow {
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.7),
+                 0 0 20px rgba(139, 92, 246, 0.5),
+                 0 0 30px rgba(139, 92, 246, 0.3),
+                 0 0 40px rgba(139, 92, 246, 0.1);
+  }
+  
+  .neon-text {
+    @apply text-transparent bg-clip-text bg-gradient-neon;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-neon-hover transform hover:scale-[1.02];
+  }
+  
+  .cyberpunk-border {
+    @apply relative;
+  }
+  
+  .cyberpunk-border::before {
+    content: '';
+    @apply absolute -inset-[1px] bg-gradient-neon rounded-md -z-10;
+    animation: border-glow 3s ease infinite alternate;
+  }
+  
+  .gradient-border {
+    background: linear-gradient(45deg, #00f6ff, #8b5cf6, #ec4899);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  /* Game-style button */
+  .game-button {
+    @apply relative overflow-hidden transition-all duration-300 hover:shadow-neon-hover;
+  }
+  
+  .game-button::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-neon opacity-0 transition-opacity duration-300;
+  }
+  
+  .game-button:hover::after {
+    @apply opacity-20;
+  }
+  
+  /* Terminal text effect */
+  .terminal-text {
+    @apply font-mono;
+    animation: typing 3s steps(40, end);
+  }
+  
+  /* Grid layout for game-style panels */
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Neo-brutalist card design */
+  .neo-card {
+    @apply bg-game-blue/50 backdrop-blur-sm border border-neon-blue/30 rounded-md overflow-hidden shadow-neon transform transition-all hover:shadow-neon-hover;
+  }
+  
+  /* Loading bar */
+  .loading-bar {
+    @apply relative h-1 w-full bg-game-purple/30 overflow-hidden rounded-full;
+  }
+  
+  .loading-bar::after {
+    content: '';
+    @apply absolute top-0 left-0 h-full w-full bg-gradient-neon;
+    animation: loading 1.5s infinite linear;
+  }
+  
+  /* Cursor trail effect */
+  .cursor-trail {
+    @apply fixed w-6 h-6 rounded-full bg-neon-purple/30 blur-md pointer-events-none -z-10;
+    transition: all 0.1s linear;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { filter: brightness(1) blur(1px); }
+  50% { filter: brightness(1.2) blur(3px); }
+}
+
+@keyframes border-glow {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+    transform: translate(-2px, 2px);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+    transform: translate(1px, -3px);
+  }
+  40% {
+    clip-path: inset(43% 0 1% 0);
+    transform: translate(-1px, 3px);
+  }
+  60% {
+    clip-path: inset(25% 0 58% 0);
+    transform: translate(3px, -1px);
+  }
+  80% {
+    clip-path: inset(54% 0 7% 0);
+    transform: translate(-3px, -2px);
+  }
+  100% {
+    clip-path: inset(58% 0 43% 0);
+    transform: translate(2px, 2px);
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  @apply text-neon-blue;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation-delay: 0.1s;
+}
+
+.glitch::after {
+  @apply text-neon-pink;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation-delay: 0.2s;
+}
+
+.scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, rgba(139, 92, 246, 0.2), transparent);
+  z-index: 1;
+  opacity: 0.3;
+  pointer-events: none;
+  animation: scanline 3s linear infinite;
+}
