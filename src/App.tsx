@@ -5,6 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Team from './components/Team';
+import Partners from './components/Partners';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -47,9 +48,11 @@ function App() {
       {/* Main content */}
       <Navbar />
       <Hero />
+    
+      <Portfolio />
       <Services />
       <About />
-      <Portfolio />
+      <Partners />
       <Team />
       <Testimonials />
       <Contact />
