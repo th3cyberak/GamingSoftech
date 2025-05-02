@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 z-10 pt-10">
+      <div className="container mx-auto px-4 z-10 pt-[4.5rem]">
         <div className="max-w-5xl mx-auto text-center">
           {/* Glitch Title Effect */}
           <div className="mb-8">
@@ -98,23 +98,23 @@ const Hero: React.FC = () => {
           </p>
           
           <div className={`flex flex-col sm:flex-row justify-center gap-4 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-8'}`}>
-            <a 
+            {/* <a 
               href="#contact" 
               className="group px-8 py-4 bg-gradient-neon hover:bg-gradient-to-r hover:from-neon-pink hover:to-neon-blue text-white font-medium rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-neon-hover flex items-center justify-center"
             >
               Request a Quote
               <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </a> */}
             <a 
               href="#services" 
-              className="group px-8 py-4 bg-transparent border border-neon-blue text-neon-blue hover:bg-neon-blue/10 font-medium rounded-md transition-all duration-300 flex items-center justify-center"
+              className="group px-8 py-4 bg-gradient-neon hover:bg-gradient-to-r hover:from-neon-pink hover:to-neon-blue text-white font-medium rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-neon-hover flex items-center justify-center"
             >
               Launch a Betting Platform
               <Play size={18} className="ml-2 group-hover:scale-110 transition-transform" fill="currentColor" />
             </a>
             <a 
               href="#portfolio" 
-              className="group px-8 py-4 bg-transparent border border-neon-purple text-neon-purple hover:bg-neon-purple/10 font-medium rounded-md transition-all duration-300 flex items-center justify-center"
+              className="group px-8 py-4 bg-gradient-neon hover:bg-gradient-to-r hover:from-neon-pink hover:to-neon-blue text-white font-medium rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-neon-hover flex items-center justify-center"
             >
               Explore Demo Sites
               <ExternalLink size={18} className="ml-2 group-hover:rotate-12 transition-transform" />
