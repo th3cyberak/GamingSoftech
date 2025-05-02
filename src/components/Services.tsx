@@ -156,15 +156,15 @@ const Services: React.FC = () => {
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-1 rounded-full bg-game-purple/30 text-neon-blue text-sm font-mono mb-4 border border-neon-blue/20">
+          {/* <div className="inline-block px-4 py-1 rounded-full bg-game-purple/30 text-neon-blue text-sm font-mono mb-4 border border-neon-blue/20">
             POWER TREE
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-glow">
             <span className="text-transparent bg-clip-text bg-gradient-neon">Our Services</span>
           </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Select a power node to unlock premium betting and gaming solutions
-            <span className="block mt-2 text-sm text-blue-300 font-mono">[ CLASS: AAA GAMING SOLUTIONS ]</span>
+            {/* <span className="block mt-2 text-sm text-blue-300 font-mono">[ CLASS: AAA GAMING SOLUTIONS ]</span> */}
           </p>
         </div>
         
@@ -188,7 +188,7 @@ const Services: React.FC = () => {
         </div>
         
         {/* Power Level Legend */}
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <div className="bg-game-blue/40 backdrop-blur-sm p-4 rounded-md border border-neon-blue/20">
             <div className="text-xs text-blue-300 mb-2 font-mono">POWER LEVEL LEGEND</div>
             <div className="flex space-x-6">
@@ -206,7 +206,7 @@ const Services: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
