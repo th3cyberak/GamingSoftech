@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-6">
               Your success partner in the Sports Gaming Industry, offering all gaming services under one roof.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
                 <a 
                   key={social} 
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                   <span className="sr-only">{social}</span>
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           
           <div>
