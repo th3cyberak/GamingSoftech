@@ -98,15 +98,15 @@ const About: React.FC = () => {
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-1 rounded-full bg-game-purple/30 text-neon-blue text-sm font-mono mb-4 border border-neon-blue/20">
+          {/* <div className="inline-block px-4 py-1 rounded-full bg-game-purple/30 text-neon-blue text-sm font-mono mb-4 border border-neon-blue/20">
             GUILD PROFILE
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-glow">
             <span className="text-transparent bg-clip-text bg-gradient-neon">Why Gaming Softech</span>
           </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Your Success Partner for Sports Betting Website Development
-            <span className="block mt-2 text-sm text-blue-300 font-mono">[ GUILD LEVEL: S-TIER | REPUTATION: MAXED ]</span>
+            {/* <span className="block mt-2 text-sm text-blue-300 font-mono">[ GUILD LEVEL: S-TIER | REPUTATION: MAXED ]</span> */}
           </p>
         </div>
         
@@ -131,14 +131,14 @@ const About: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-b from-game-blue/70 via-transparent to-game-purple/70 mix-blend-overlay"></div>
                   
                   {/* Status Indicators */}
-                  <div className="absolute top-4 left-4 bg-game-blue/80 backdrop-blur-sm px-3 py-1 rounded-md border border-neon-blue/30 flex items-center gap-2">
+                  {/* <div className="absolute top-4 left-4 bg-game-blue/80 backdrop-blur-sm px-3 py-1 rounded-md border border-neon-blue/30 flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-neon-blue animate-pulse"></div>
                     <span className="text-neon-blue text-xs font-mono">ELITE SQUAD</span>
-                  </div>
+                  </div> */}
                   
-                  <div className="absolute bottom-4 right-4 bg-game-blue/80 backdrop-blur-sm px-3 py-1 rounded-md border border-neon-blue/30 flex items-center gap-2">
+                  {/* <div className="absolute bottom-4 right-4 bg-game-blue/80 backdrop-blur-sm px-3 py-1 rounded-md border border-neon-blue/30 flex items-center gap-2">
                     <span className="text-neon-blue text-xs font-mono">MISSIONS: 50+</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               
@@ -150,7 +150,7 @@ const About: React.FC = () => {
             </div>
             
             {/* Mission Statement Panel */}
-            <div className="mt-8 bg-game-blue/40 backdrop-blur-sm p-5 rounded-lg border border-neon-blue/20 shadow-neon">
+            {/* <div className="mt-8 bg-game-blue/40 backdrop-blur-sm p-5 rounded-lg border border-neon-blue/20 shadow-neon">
               <div className="text-xs font-mono text-gray-400 mb-2">MISSION STATEMENT</div>
               <p className="text-blue-100 mb-3">
                 Gaming Softech delivers comprehensive betting and gaming solutions from idea to scale - 
@@ -159,7 +159,7 @@ const About: React.FC = () => {
               <div className="text-xs font-mono text-neon-blue">
                 // From idea to scale, we build, secure, market & support your entire betting business.
               </div>
-            </div>
+            </div> */}
           </div>
           
           {/* Character Stats / Guild Reputation */}
@@ -217,7 +217,7 @@ const About: React.FC = () => {
               </div>
               
               {/* Guild Badges */}
-              <div className="border-t border-neon-blue/20 pt-4 mt-2">
+              {/* <div className="border-t border-neon-blue/20 pt-4 mt-2">
                 <div className="text-sm font-mono text-neon-blue mb-2">ACHIEVEMENTS</div>
                 <div className="flex flex-wrap gap-3">
                   <div className="p-2 bg-game-purple/30 rounded-md border border-neon-blue/20 flex items-center gap-2">
@@ -248,7 +248,7 @@ const About: React.FC = () => {
                     <span className="text-sm text-white">Flexibility: S-Tier</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
