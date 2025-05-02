@@ -85,11 +85,11 @@ const Portfolio: React.FC = () => {
     }
   ];
 
-  const filters = [
-    { id: 'all', label: 'All Achievements', icon: <Trophy size={16} /> },
-    { id: 'betting', label: 'Sports Betting', icon: <Star size={16} /> },
-    { id: 'casino', label: 'Casino Games', icon: <Award size={16} /> }
-  ];
+  // const filters = [
+  //   { id: 'all', label: 'All Achievements', icon: <Trophy size={16} /> },
+  //   { id: 'betting', label: 'Sports Betting', icon: <Star size={16} /> },
+  //   { id: 'casino', label: 'Casino Games', icon: <Award size={16} /> }
+  // ];
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
@@ -115,20 +115,20 @@ const Portfolio: React.FC = () => {
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-12">
-          <div className="inline-block px-4 py-1 rounded-full bg-game-purple/30 text-neon-blue text-sm font-mono mb-4 border border-neon-blue/20">
+          {/* <div className="inline-block px-4 py-1 rounded-full bg-game-purple/30 text-neon-blue text-sm font-mono mb-4 border border-neon-blue/20">
             MISSION VAULT
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-glow">
-            <span className="text-transparent bg-clip-text bg-gradient-neon">Trending Solutions</span>
+            <span className="text-transparent bg-clip-text bg-gradient-neon">Our Trending Solutions</span>
           </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
             Access our collection of legendary missions completed for premium clients
-            <span className="block mt-2 text-sm text-blue-300 font-mono">[ ACHIEVEMENT SHOWCASE: LEVEL S BUILDS ]</span>
+            {/* <span className="block mt-2 text-sm text-blue-300 font-mono">[ ACHIEVEMENT SHOWCASE: LEVEL S BUILDS ]</span> */}
           </p>
         </div>
         
         {/* Filter Controls - Redesigned as Game Filter Interface */}
-        <div className="flex flex-wrap justify-center mb-12 gap-3">
+        {/* <div className="flex flex-wrap justify-center mb-12 gap-3">
           {filters.map(filter => (
             <button
               key={filter.id}
@@ -148,7 +148,7 @@ const Portfolio: React.FC = () => {
               {filter.label}
             </button>
           ))}
-        </div>
+        </div> */}
         
         {/* Projects as Game Collectible Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -156,8 +156,8 @@ const Portfolio: React.FC = () => {
             <div 
               key={project.id} 
               className="group relative perspective"
-              onMouseEnter={() => handleMouseEnter(project.id)}
-              onMouseLeave={handleMouseLeave}
+              // onMouseEnter={() => handleMouseEnter(project.id)}
+              // onMouseLeave={handleMouseLeave}
             >
               {/* Card Front - Game Collectible Card */}
               <div 
@@ -197,7 +197,7 @@ const Portfolio: React.FC = () => {
                           ? 'bg-neon-blue/20 text-neon-blue' 
                           : 'bg-neon-purple/20 text-neon-purple'
                       }`}>
-                        {project.category === 'betting' ? 'SPORTS BETTING' : 'CASINO GAMING'}
+                        {project.category === 'betting' ? 'SPORTS BETTING' : 'SPORTS BATTING'}
                       </span>
                       <h3 className="text-xl font-bold mt-2 text-white glitch" data-text={project.title}>{project.title}</h3>
                     </div>
@@ -261,7 +261,7 @@ const Portfolio: React.FC = () => {
                   
                   <div className="mt-auto pt-4 border-t border-neon-blue/20">
                     <a 
-                      href={`https://${project.url}`} 
+                      // href={`https://${project.url}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center justify-center w-full py-2 bg-game-blue/50 rounded-md text-neon-blue hover:bg-game-blue/70 transition-all duration-300"
@@ -280,10 +280,12 @@ const Portfolio: React.FC = () => {
         <div className="mt-16 text-center">
           <div className="inline-block relative overflow-hidden">
             <a 
-              href="#contact" 
+              href="https://wa.me/919886222236" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-gradient-neon text-white font-medium rounded-md hover:shadow-neon-hover transition-all duration-300"
             >
-              Request Your Custom Project
+              Get Demo Now
             </a>
             <div className="absolute inset-0 bg-white/20 animate-pulse-slow opacity-0 hover:opacity-30 transition-opacity"></div>
           </div>
