@@ -81,7 +81,7 @@ const Testimonials: React.FC = () => {
                 </div>
               </div>
               <div className="md:w-2/3 text-center md:text-left">
-                <div className="flex justify-center md:justify-start mb-3">
+                <div className="flex justify-center md:justify-start mb-3"> 
                   {[...Array(5)].map((_, i) => (
                     <Star 
                       key={i} 
