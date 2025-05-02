@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
               ))}
             </div>
             
-            <div className="mt-12">
+            {/* <div className="mt-12">
               <h4 className="text-lg font-medium text-gray-900 mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
@@ -91,11 +91,11 @@ const Contact: React.FC = () => {
                     className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors"
                   >
                     <span className="sr-only">{social}</span>
-                    {/* Icons would go here */}
+                 
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
           
           <div className="lg:w-2/3">
