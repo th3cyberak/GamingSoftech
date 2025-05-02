@@ -93,10 +93,12 @@ const Navbar: React.FC = () => {
           {/* CTA Button on desktop */}
           <div className="hidden md:block">
             <a 
-              href="#contact" 
+              href="https://wa.me/919886222236"
+              target="_blank"
+              rel="noopener noreferrer" 
               className="cyberpunk-border px-4 py-2 bg-game-blue text-neon-blue font-medium rounded-md hover:shadow-neon-hover transition-all duration-300"
             >
-              Play Now
+              Get Demo
             </a>
           </div>
 
@@ -142,11 +144,13 @@ const Navbar: React.FC = () => {
           
           <div className="mt-6 mb-2">
             <a 
-              href="#contact" 
+              href="https://wa.me/919886222236" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-center cyberpunk-border py-3 bg-game-blue text-neon-blue font-medium rounded-md hover:shadow-neon-hover transition-all duration-300"
               onClick={() => setIsOpen(false)}
             >
-              Play Now
+              Get Demo
             </a>
           </div>
         </div>
