@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Brain, Target, ShieldCheck, Headphones, Zap, GaugeCircle } from 'lucide-react';
-
+import img from '../../casino.png';
 interface Stat {
   name: string;
   value: number;
@@ -112,7 +112,7 @@ const About: React.FC = () => {
         
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Guild Emblem / Team Hologram */}
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 w-full">
             <div className="relative aspect-square max-w-lg mx-auto">
               {/* Animated Frame */}
               <div className="absolute inset-0 border-2 border-neon-blue rounded-lg overflow-hidden shadow-neon animate-pulse-slow">
@@ -122,9 +122,10 @@ const About: React.FC = () => {
                 {/* Image with Holographic Overlay */}
                 <div className="relative w-full h-full overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={img} 
                     alt="Gaming Development Team" 
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                   
                   {/* Holographic Overlay */}
