@@ -7,7 +7,7 @@ interface TeamMember {
   image: string;
   expertise: string[];
   social: {
-    linkedin?: string; 
+    linkedin?: string;
     twitter?: string;
     email?: string;
   };
